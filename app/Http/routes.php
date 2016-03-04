@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('tasks','TasksController');
+Route::resource('tags','TagsController');
+Route::resource('lanes','LanesController');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
