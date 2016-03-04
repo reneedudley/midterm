@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Tags extends Model
+class Lane extends Model
 {
     public function tasks () {
-		$this->belongsToMany('\App\Task');
+		$this->hasMany('\App\Task');
 	}
 }

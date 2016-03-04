@@ -15,6 +15,8 @@ class CreateTaskTagTable extends Migration
         Schema::create('taskTag', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->integer('task_id')->unsigned()->index();
+            $table->integer('tag_id')->unsigned()->index();
         });
     }
 
